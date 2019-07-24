@@ -1,0 +1,10 @@
+label {
+    color: black;
+}
+
+.form-record /deep/ .mat-tab-label-container {
+    .mat-tab-label-content {
+        font-size: 20px;
+        color: black;
+    }
+}

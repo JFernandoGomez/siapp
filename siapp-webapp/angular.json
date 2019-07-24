@@ -27,7 +27,13 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "es5BrowserSupport": true
+            "es5BrowserSupport": true,
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "libs/sasslib/src/lib"
+              ]
+            },
+            "extractCss": true
           },
           "configurations": {
             "production": {
@@ -134,5 +140,10 @@
       }
     }
   },
-  "defaultProject": "siapp-webapp"
+  "defaultProject": "siapp-webapp",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

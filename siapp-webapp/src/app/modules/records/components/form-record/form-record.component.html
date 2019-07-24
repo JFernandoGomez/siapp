@@ -6,7 +6,7 @@
         'Apertura de expediente' : '' }} {{this.action === 'edit-record' ? 'Editar Expediente' : ''}} {{this.action === 'view-record' ? 'Ver Expediente' : ''}}
     </h1>
 </div>
-<div class="row">
+<div class="row form-record">
     <div class="col-md-12 pl-5 text border-left-primary">
         <form [formGroup]="recordForm" (ngSubmit)="onSubmit()" class="mb-lg-5">
             <div class="col-md-12 text-right mb-3">
@@ -675,12 +675,6 @@
                                 <h6 class="feedback-field">Este campo es requerido</h6>
                             </div>
                         </div>
-                    </div>
-                </mat-tab>
-                <mat-tab label="Genograma">
-                    <div class="image-upload">
-                        <img *ngIf="genogramSrc" [src]="genogramSrc" style="max-width:800px;max-height:600px" />
-                        <input name="imageUrl" type="file" accept="image/*" (change)="handleInputChange($event)" />
                     </div>
                 </mat-tab>
                 <mat-tab label="Impresión diagnóstica">

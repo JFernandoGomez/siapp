@@ -41,6 +41,9 @@
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Expediente</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" id="genograma-tab" data-toggle="tab" href="#genograma" role="tab" aria-controls="genomgrama" aria-selected="true">Genograma</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Reportes de sesión</a>
                         </li>
                         <li class="nav-item">
@@ -64,6 +67,9 @@
                             <ng-container *ngIf="this.person">
                                 <app-record-information [personInfo]="[this.person.id]"></app-record-information>
                             </ng-container>
+                        </div>
+                        <div class="tab-pane fade" id="genograma" role="tabpanel" aria-labelledby="genograma-tab">
+                            <p>Genograma</p>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <p>reportes de session</p>
